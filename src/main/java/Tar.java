@@ -37,7 +37,6 @@ public class Tar implements Callable<Integer> {
                 }
             }
             lexer = new LexerImplementation((new InputStreamReader(new FileInputStream(archive))));
-//            lexer = new LexerImplementation((new InputStreamReader(new ByteArrayInputStream(("let a: boolean = true; if (a) { print a;}").getBytes()))));
             parser = new ParserImplementation(lexer.scanTokens());
             if (mode != null) {
                 if (mode.equals("interpret")) {
