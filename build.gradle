@@ -1,0 +1,30 @@
+plugins {
+    id 'java'
+}
+
+group 'org.example'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+jar {
+    manifest {
+        attributes(
+                'Main-Class': 'PrintScript'
+        )
+    }
+    from {
+        configurations.compile.collect { it.isDirectory() ? it : zipTree(it) }
+    }
+}
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+    compile project(":parser")
+    compile project(":interpreter")
+    compile 'info.picocli:picocli:4.3.2'
+    annotationProcessor 'info.picocli:picocli-codegen:4.3.2'
+
+}

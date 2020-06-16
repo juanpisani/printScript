@@ -1,0 +1,15 @@
+{
+    let a: number;
+    {
+        let b: number = 2;
+        a = 5;
+    }
+    print a;
+    // print b;
+}
+let condition: boolean = 3 > 5;
+if (condition) {
+    print "this was true";
+} else
+    print "false";
+

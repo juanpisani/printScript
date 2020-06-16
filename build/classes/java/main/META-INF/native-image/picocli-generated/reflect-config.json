@@ -1,0 +1,21 @@
+[
+  {
+    "name" : "Tar",
+    "allDeclaredConstructors" : true,
+    "allPublicConstructors" : true,
+    "allDeclaredMethods" : true,
+    "allPublicMethods" : true,
+    "fields" : [
+      { "name" : "archive" },
+      { "name" : "mode" },
+      { "name" : "version" }
+    ]
+  },
+  {
+    "name" : "java.lang.Double",
+    "allDeclaredConstructors" : true,
+    "allPublicConstructors" : true,
+    "allDeclaredMethods" : true,
+    "allPublicMethods" : true
+  }
+]
